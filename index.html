@@ -99,25 +99,6 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 <div class="content-main">
                     <div class="container">
 
-                        <h2 class="border-title">What is OpenAlias?<span></span></h2>
-                        <div class="margin15"></div>
-                        <div class="tabs-vertical-container">
-                            <div class="tabs-vertical-frame-content">
-                                <p>OpenAlias seeks to provide a way to simplify aliasing amidst a rapidly shifting technology climate. Users are trying to cross the bridge to private and cryptographically secure infrastructure and systems, but many of them have just barely started remembering the email addresses of their friends and family.</p>
-                                <p>As part of the ongoing development of the <a href="https://monero.cc">Monero cryptocurrency project</a>, we asked ourselves: how can we simplify payments for users unfamiliar with cryptocurrency? Monero stealth addresses are at least 95 characters long - memorising them is not an option, and asking someone to send a payment to <95-character-string> is only going to lead to confusion.</p>
-                                <p>At its most basic, OpenAlias is a TXT DNS record on a FQDN (fully qualified domain name). By combining this with DNS-related technologies we have created an aliasing standard that is extensible for developers, intuitive and familiar for users, and can interoperate with both centralised and decentralised domain systems.</p>
-                            </div>
-                        </div>                    
-                    
-                        <h2 class="border-title">How is it superior to other aliasing systems?<span></span></h2>
-                        <div class="margin15"></div>
-                        <div class="tabs-vertical-container">
-                            <div class="tabs-vertical-frame-content">
-                                <p>Typical aliasing systems are simple key-value stores. A cryptocurrency may, for instance, have an aliasing system that lets you (through the process of mining) declare that the alias <em>Bob</em> is equal to <95-character-string>. This has two major pitfalls for end-users. Firstly, it makes it the responsibility of that cryptocurrency to resolve issues or alias disputes. For instance, if a user loses their private keys and want to continue using that alias, there needs to be a mechanism in place for that, otherwise you end up with dead aliases and users have the hassle of having to update everyone that they have a new alias. The second problem is that it doesn't actually solve anything. Once the first few <em>Bob</em>-derived aliases are taken, users end up resorting to things like <em>Bob1979-awesomesauce324</em>, which means that the end-user still has to have that written down in an address book somewhere.</p>
-                                <p>OpenAlias thus provides several advantages:</p>
-                            </div>
-                        </div>                    
-                        <div class="margin15"></div>
                         <div class="one-fourth column no-space">
                         	<div class="service">
                                 <i class="fa fa-group animate" data-animation="rollIn" data-delay="100"></i>
@@ -150,6 +131,33 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                 <p>It is strongly recommended that developers bake support for DNSCrypt in and use our listed servers for lookups, thus retaining user privacy and not leaking lookup information.</p>
                             </div>
                         </div>
+                        <div class="margin15"></div>
+
+                        <h2 class="border-title">What is OpenAlias?<span></span></h2>
+                        <div class="margin15"></div>
+                        <div class="tabs-vertical-container">
+                            <div class="tabs-vertical-frame-content">
+                                <p>OpenAlias seeks to provide a way to simplify aliasing amidst a rapidly shifting technology climate. Users are trying to cross the bridge to private and cryptographically secure infrastructure and systems, but many of them have just barely started remembering the email addresses of their friends and family.</p>
+                                <p>As part of the ongoing development of the <a href="https://getmonero.org">Monero cryptocurrency project</a>, we asked ourselves: how can we simplify payments for users unfamiliar with cryptocurrency? Monero stealth addresses are at least 95 characters long - memorising them is not an option, and asking someone to send a payment to <95-character-string> is only going to lead to confusion.</p>
+                                <p>At its most basic, OpenAlias is a TXT DNS record on a FQDN (fully qualified domain name). By combining this with DNS-related technologies we have created an aliasing standard that is extensible for developers, intuitive and familiar for users, and can interoperate with both centralised and decentralised domain systems.</p>
+                            </div>
+                        </div>                    
+                    
+                        <h2 class="border-title">How is it superior to other aliasing systems?<span></span></h2>
+                        <div class="margin15"></div>
+                        <div class="tabs-vertical-container">
+                            <div class="tabs-vertical-frame-content">
+                                <p>Typical aliasing systems are simple key-value stores. A cryptocurrency may, for instance, have an aliasing system that lets you (through the process of mining) declare that the alias <em>Bob</em> is equal to <95-character-string>. This has two major pitfalls for end-users. Firstly, it makes it the responsibility of that cryptocurrency to resolve issues or alias disputes. For instance, if a user loses their private keys and want to continue using that alias, there needs to be a mechanism in place for that, otherwise you end up with dead aliases and users have the hassle of having to update everyone that they have a new alias. The second problem is that it doesn't actually solve anything. Once the first few <em>Bob</em>-derived aliases are taken, users end up resorting to things like <em>Bob1979-awesomesauce324</em>, which means that the end-user still has to have that written down in an address book somewhere.</p>
+                            </div>
+                        </div>                    
+
+                        <h2 class="border-title">Who created OpenAlias?<span></span></h2>
+                        <div class="margin15"></div>
+                        <div class="tabs-vertical-container">
+                            <div class="tabs-vertical-frame-content">
+                                <p>The idea of a DNS-based alias system is not new, and has been suggested on more than one occassion. The groundwork for OpenAlias was initially done by Riccardo "fluffypony" Spagni and Naphex, formerly of btcXchange.ro. Many months after this initial gem of an idea was born Riccardo, along with the rest of the Monero core team, fleshed it out into a practical and extensible standard. A special thanks goes to Tom Winget, who created the first OpenAlias client implementation in Monero Core.
+                            </div>
+                        </div>                    
 
                     </div>
 				</div>
@@ -170,11 +178,12 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         <div class="margin15"></div>
                         <div class="tabs-vertical-container">
                             <div class="tabs-vertical-frame-content">
-                                <p>The Monero core team are actively adding new OpenAlias implementations. To that end, there are currently three implementations:
+                                <p>The Monero core team, and other contributors, are actively adding new OpenAlias implementations. To that end, there are currently three implementations:
                                 <ul>
-                                	<li><a href="http://github.com/openalias/electrum">The Electrum lightweight Bitcoin wallet</a> (currently in PR pending review)</li>
+                                	<li><a href="https://electrum.org">Electrum, lightweight Bitcoin wallet</a> (from 2.0 onwards)</li>
                                 	<li><a href="https://mymonero.com">MyMonero, a web-based Monero account/wallet management system</a></li>
-                                	<li><a href="http://github.com/monero-project/bitmonero">Monero Core, including the simplewallet and rpcwallet applications</a></li>
+                                	<li><a href="https://getmonero.org">Monero Core, including the simplewallet and rpcwallet applications</a></li>
+					<li><a href="https://coin.space">Coin.Space, a web-based Bitcoin and Litecoin wallet</a></li>
                                 </ul>
                                 </p>
                             </div>
@@ -186,7 +195,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                             <div class="tabs-vertical-frame-content">
                                 <p>OpenAlias can be used for anything, but our primary use-case is to simplify cryptocurrency payments. Users are already familiar with systems like PayPal that let you send a payment to an email address. Thus, to the end user this should be no less intuitive. In order to make the paradigm truly familiar for the end user, OpenAlias allows for the user to enter either just the FQDN (eg. example.openalias.org) or an email-style address that is translated to an FQDN (eg. example@openalias.org)</p>
                                 <p><strong>Workflow:</strong><br />
-                                <span class="fa fa-level-up fa-rotate-90 fa-lg"></span>user wants to send a payment to donate.monero.cc <br />
+                                <span class="fa fa-level-up fa-rotate-90 fa-lg"></span>user wants to send a payment to donate.getmonero.org <br />
                                 <span class="fa fa-level-up fa-rotate-90 fa-lg"></span>user visually confirms the resulting address is as expected <br />
                                 <span class="fa fa-level-up fa-rotate-90 fa-lg"></span>payment is made to the address
                                 </p>
@@ -268,7 +277,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                                 <li><em>tx_description</em> - in addition to the name of the recipient, if you are using OpenAlias for transactions you may choose to define a transaction description. Bear in mind that DNS is typically long-lived data and not always updated at request time, so this should only be used if it does not need to be updated constantly.</li>
                                 <li><em>tx_amount</em> - as above, this should only be used where it is semi-permanent and unlikely to change often. The amount is a numeric value, and the exact numeric type and size you choose to enforce is up to you and your application's use-case.</li>
                                 <li><em>tx_payment_id</em> - this is particular to Monero, but is standardised as other cryptocurrencies (CryptoNote-based cryptocurrencies in particular) may find it useful. It is typically a hex string of 32 characters, but that is not enforced in the standard.</li>
-                                <li><em>address_signature</em> - if you have a standardised way of signing messages based on the address private key, then this can be used to validate the FQDN. The message that is signed should be the entire FQDN (eg. donate.monero.cc) with nothing else. Validation would be to verify that the signature is valid for the FQDN as a message.</li>
+                                <li><em>address_signature</em> - if you have a standardised way of signing messages based on the address private key, then this can be used to validate the FQDN. The message that is signed should be the entire FQDN (eg. donate.getmonero.org) with nothing else. Validation would be to verify that the signature is valid for the FQDN as a message.</li>
                                 <li><em>checksum</em> - checksum is an optional CRC-32. It has to appear as the last item in the TXT record, otherwise the record is open to manipulation. Depending on your use-case, it may serve little or no purpose, although some may choose to include it for additional validation. In order to calculate or verify the checksum, take the entire record up until the checksum key-value pair (ie. excluding the checksum key-value pair). Strip any spaces from either side, and calculate the CRC-32 on that final record.</li>
                                 </ul>
                                 </p>
@@ -304,7 +313,7 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         <div class="tabs-vertical-container">
                             <div class="tabs-vertical-frame-content">
                                 <p>In order to simplify implementation for developers, the Monero Project is writing sample implementations and libraries for various languages. Additionally, OpenAlias will run open and free DNS servers that support Namecoin, DNSSEC, and DNSCrypt. If you are a developer and wish to submit or contribute code, please feel free to do so.</p>
-                                <p>If you would like to support this ongoing effort and help us cover the costs, please consider donating to the Monero Project either via Monero: <code>46BeWrHpwXmHDpDEUmZBWZfoQpdc6HaERCNmx1pEYL2rAcuwufPN9rXHHtyUA4QVy66qeFQkn6sfK8aHYjA3jk3o1Bv16em</code> or via Bitcoin: <code>1FhnVJi2V1k4MqXm2nHoEbY5LV7FPai7bb</code>If you use an OpenAlias compatible client, both of these donation addresses are available on openalias.org and/or donate.monero.cc.</p>
+                                <p>If you would like to support this ongoing effort and help us cover the costs, please consider donating to the Monero Project either via Monero: <code>46BeWrHpwXmHDpDEUmZBWZfoQpdc6HaERCNmx1pEYL2rAcuwufPN9rXHHtyUA4QVy66qeFQkn6sfK8aHYjA3jk3o1Bv16em</code> or via Bitcoin: <code>1FhnVJi2V1k4MqXm2nHoEbY5LV7FPai7bb</code>If you use an OpenAlias compatible client, both of these donation addresses are available on openalias.org and/or donate.getmonero.org.</p>
                                 
                             </div>
                         </div>
@@ -313,7 +322,8 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         <div class="margin15"></div>
                         <div class="tabs-vertical-container">
                             <div class="tabs-vertical-frame-content">
-                                <p>OpenAlias is a part of the Monero project, and can thus be discussed in either #monero-dev or #openalias on Freenode. There is also a dedicated OpenAlias section on <a href="https://forum.monero.cc">the Monero forums</a>. If you would like to get hold of us personally, then you can do so via email: dev@openalias.org.</p>                                
+                                <p>OpenAlias is a part of the Monero project, and can thus be discussed in either #monero-dev or #openalias on Freenode. There is also a dedicated OpenAlias section on <a href="https://forum.getmonero.org">the Monero forums</a>. If you would like to get hold of us personally, then you can do so via email: dev@openalias.org.</p>                                
+				<p>Media enquiries can be directed to Riccardo Spagni directly on ric@getmonero.org.</p>
                             </div>
                         </div>
 
