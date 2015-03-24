@@ -224,14 +224,14 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                         <div class="tabs-vertical-container">
                             <div class="tabs-vertical-frame-content">
                                 <p>In order to ensure that lookups do not betray the user's privacy it is best to implement DNSCrypt from OpenDNS, and force resolution via a DNSCrypt-compatible resolver. Dependent on your use-case, you may choose to bake DNSCrypt into your software, or bundle <a href="https://github.com/jedisct1/dnscrypt-proxy">dnscrypt-proxy</a> along with your application.</p>
-                                <p>There are only a handful of DNSCrypt compatible resolvers worldwide, and fewer still that additionally support DNSSEC validation, support Namecoin resolution, and don't log DNS requests. Additional DNS resolvers that meet these criteria will be launched and operated by OpenAlias and by contributors in the coming months. In order to make your life easier, you can get a list of available resolvers that have DNSCrypt operational on port 443 by fetching the A records from any of the following domains:
+                                <p>There are only a handful of DNSCrypt compatible resolvers worldwide, and fewer still that additionally support DNSSEC validation, support Namecoin resolution, and don't log DNS requests. Additional DNS resolvers that meet these criteria will be launched and operated by OpenAlias and by contributors in the coming months. In order to make your life easier, you can get a list of available resolvers that meet all these criteria by fetching the TXT records from any of the following domains:
                                 <ul>
                                 	<li>resolvers.openalias.org</li>
                                 	<li>resolvers.openalias.ch</li>
                                 	<li>resolvers.openalias.se</li>
                                 	<li>resolvers.openalias.li</li>
                                 </ul>
-                                These resolver records will be maintained, and if a malicious resolver is found it will be removed. It is, therefore, prudent to poll this list regularly within the application, either on-request or at least once every 24 hours.
+                                The TXT records consist of <em>host:port=pubkey</em>, allowing you to connect to their DNSCrypt resolver using these details. These resolver records will be maintained, and if a malicious resolver is found it will be removed. It is, therefore, prudent to poll this list regularly within the application, either on-request or at least once every 24 hours.
                                 </p>
                             </div>
                         </div>
