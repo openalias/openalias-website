@@ -1,0 +1,35 @@
+email: dev@openalias.org
+name: OpenAlias
+description: OpenAlias | Simplifying the World with Standardized and Universal Address and Metadata Records
+keywords: "cryptocurrency, blockchain, domain name, crypto, username"
+baseurl: ""
+url: "https://openalias.github.io"
+
+markdown: kramdown
+
+kramdown:
+    smart_quotes: ["apos", "apos", "quot", "quot"]
+    input: GFM
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+paginate: 6
+paginate_path: "/updates/page:num/"
+
+collections_dir: posts
+
+# Used if you wish to add new collections
+# collections:
+#   collection1name:
+#     output: true
+#   collection2name:
+#     output: true
+  
+# Needed for Jekyll to deliver . folders
+# We use this for Matrix
+include:
+  - .well-known
+  - _redirects
