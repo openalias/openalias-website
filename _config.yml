@@ -2,8 +2,8 @@ email: dev@openalias.org
 name: OpenAlias
 description: OpenAlias | Simplifying the World with Standardized and Universal Address and Metadata Records
 keywords: "cryptocurrency, blockchain, domain name, crypto, username"
-baseurl: "/openalias-website"
-url: "https://openalias.github.io"
+baseurl: ""
+url: "https://openalias.org"
 
 markdown: kramdown
 
